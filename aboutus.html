@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a9179e9593.js" crossorigin="anonymous"></script></head>
+<body>
+    <!--- HEADER-->
+    <section class="sub-header">
+
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About US</h1>
+
+
+    </section>
+
+    <!-- ABOUT US SECTION-->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world;s largest university </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehenderit.</p> 
+                   <div class="left-position"><a href="" class="hero-btn red-btn">EXPLORE NOW</a></div>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg">
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    
+
+
+
+
+
+    <!--- FOOTER-->
+    <footer class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. <br> Duis aute irure dolor in 
+            reprehenderit.</p> 
+        <div class="icons">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> by Gabriela Nunez <i class="fa-regular fa-copyright"></i></p>
+    </footer>
+   
+    <!--Javascript fot toggle Menu-->
+
+        <script>
+            var navLinks=document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+        
+</body>
+</html>
